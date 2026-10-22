@@ -2415,44 +2415,6 @@
                     </div>
                 </div>
 
-                <!-- BẢN ĐỒ TRẠNG THÁI CHI TIẾT TRONG REVIEW MODE -->
-                <div id="review-status-dashboard" class="result-status-dashboard hidden" style="margin-bottom: 20px;">
-                    <div class="result-status-dashboard-title">Bản đồ trạng thái chi tiết bài làm</div>
-                    
-                    <div class="result-status-row">
-                        <div class="result-status-label">PHẦN I</div>
-                        <div class="result-status-grid" id="review-result-grid-p1"></div>
-                    </div>
-
-                    <div class="result-status-row">
-                        <div class="result-status-label">PHẦN II</div>
-                        <div class="result-status-grid" id="review-result-grid-p2"></div>
-                    </div>
-
-                    <div class="result-status-row">
-                        <div class="result-status-label">PHẦN III</div>
-                        <div class="result-status-grid" id="review-result-grid-p3"></div>
-                    </div>
-
-                    <div class="result-status-legend">
-                        <div class="result-status-legend-item">
-                            <div class="result-status-legend-color" style="background-color: var(--accent-green);"></div>
-                            <span>Đúng hoàn toàn</span>
-                        </div>
-                        <div class="result-status-legend-item">
-                            <div class="result-status-legend-color" style="background-color: var(--accent-orange);"></div>
-                            <span>Đúng một phần</span>
-                        </div>
-                        <div class="result-status-legend-item">
-                            <div class="result-status-legend-color" style="background-color: var(--accent-red);"></div>
-                            <span>Sai</span>
-                        </div>
-                        <div class="result-status-legend-item">
-                            <div class="result-status-legend-color" style="background-color: #ffffff; border: 1.5px solid var(--border-color);"></div>
-                            <span>Chưa làm</span>
-                        </div>
-                    </div>
-                </div>
                 
                 <!-- PHẦN I -->
                 <div class="part-header">
@@ -2521,7 +2483,7 @@
         <!-- PHẦN 6: TỔNG KẾT KẾT QUẢ THI -->
         <div id="section-6" class="section-card hidden">
 <img src="logo.png" alt="Logo" class="section123-logo">
-            <h2>KẾT QUẢ BÀI THI</h2>
+            <h2>ĐÃ NỘP BÀI</h2>
             
             <div id="summary-candidate-info" class="ticket-card" style="margin-top: 15px;">
                 <div class="ticket-grid">
@@ -2538,86 +2500,15 @@
                 </div>
             </div>
 
-            <div class="results-summary">
-                <div class="score-display">
-                    <div style="font-size: 1.1rem; font-weight: bold; color: #555;">TỔNG ĐIỂM ĐẠT ĐƯỢC</div>
-                    <div id="final-total-score" class="score-number">0.00 / 10</div>
-                </div>
-
-                <table class="score-details-table">
-                    <thead>
-                        <tr>
-                            <th>Phần Thi</th>
-                            <th>Số Câu Đúng</th>
-                            <th>Điểm Đạt Được</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Phần I (Trắc nghiệm khách quan)</td>
-                            <td id="res-p1-correct">0 / 18</td>
-                            <td id="res-p1-score">0.00</td>
-                        </tr>
-                        <tr>
-                            <td>Phần II (Trắc nghiệm Đúng/Sai)</td>
-                            <td id="res-p2-correct">0 / 4 </td>
-                            <td id="res-p2-score">0.00</td>
-                        </tr>
-                        <tr>
-                            <td>Phần III (Trắc nghiệm trả lời ngắn)</td>
-                            <td id="res-p3-correct">0 / 6</td>
-                            <td id="res-p3-score">0.00</td>
-                        </tr>
-                        <tr style="font-weight: bold; background-color: #f1f2f6;">
-                            <td>Thời gian hoàn thành</td>
-                            <td colspan="2" id="res-time-taken">--:--</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="results-summary" style="text-align: center; padding: 30px 20px;">
+                <div style="font-size: 3rem; margin-bottom: 10px;"></div>
+                <h3 style="margin-bottom: 10px;">Bài thi đã được nộp thành công.</h3>
+                <p>Hệ thống đã ghi nhận bài làm của bạn.</p>
             </div>
 
             
-            <!-- DASHBOARD BẢN ĐỒ TRẠNG THÁI BÀI LÀM MỚI (Ở CUỐI TRANG KẾT QUẢ) -->
-            <div class="result-status-dashboard">
-                <div class="result-status-dashboard-title">Kết quả chi tiết bài làm</div>
-                
-                <div class="result-status-row">
-                    <div class="result-status-label">PHẦN I</div>
-                    <div class="result-status-grid" id="result-grid-p1"></div>
-                </div>
-
-                <div class="result-status-row">
-                    <div class="result-status-label">PHẦN II</div>
-                    <div class="result-status-grid" id="result-grid-p2"></div>
-                </div>
-
-                <div class="result-status-row">
-                    <div class="result-status-label">PHẦN III</div>
-                    <div class="result-status-grid" id="result-grid-p3"></div>
-                </div>
-
-                <div class="result-status-legend">
-                    <div class="result-status-legend-item">
-                        <div class="result-status-legend-color" style="background-color: var(--accent-green);"></div>
-                        <span>Đúng hoàn toàn</span>
-                    </div>
-                    <div class="result-status-legend-item">
-                        <div class="result-status-legend-color" style="background-color: var(--accent-orange);"></div>
-                        <span>Đúng một phần</span>
-                    </div>
-                    <div class="result-status-legend-item">
-                        <div class="result-status-legend-color" style="background-color: var(--accent-red);"></div>
-                        <span>Sai</span>
-                    </div>
-                    <div class="result-status-legend-item">
-                        <div class="result-status-legend-color" style="background-color: #ffffff; border: 1.5px solid var(--border-color);"></div>
-                        <span>Chưa làm</span>
-                    </div>
-                </div>
-            </div>
+            
             <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <button onclick="window.print()" class="btn btn-outline">In Kết Quả</button>
-                <button onclick="openReviewMode()" class="btn btn-secondary">Xem lại bài thi</button>
                 <button onclick="resetExam()" class="btn">Làm Lại Bài Thi</button>
             </div>
         </div>
@@ -3979,7 +3870,7 @@ Trên đĩa cân bên trái, người ta đặt một cốc thủy tinh (hệ h�
         function handlePasswordSubmit(e) {
             e.preventDefault();
             const pass = document.getElementById("input-password").value;
-            if (pass === "812310") {
+            if (pass === "812410") {
                 document.getElementById("password-error").classList.add("hidden");
                 goToSection(2);
             } else {
@@ -5112,125 +5003,17 @@ Trên đĩa cân bên trái, người ta đặt một cốc thủy tinh (hệ h�
         }
 
         function finalizeExamResult() {
-            // [FULLSCREEN] Server đã xác nhận nộp bài -> chốt phiên + thoát toàn màn hình (lỗi ở đây không được làm hỏng hiển thị kết quả)
+            // [FULLSCREEN] Server đã xác nhận nộp bài -> chốt phiên + thoát toàn màn hình (lỗi ở đây không được làm hỏng màn hình hoàn tất)
             try { fsHandleSubmitConfirmed(); } catch (e) { console.error("Lỗi thoát Full Screen (không ảnh hưởng kết quả nộp bài):", e); }
-            // ---- 1. Lấy điểm từ hàm dùng chung (đồng bộ tuyệt đối với điểm đã gửi lên Google Sheets) ----
-            const answersForDisplay = (isSubmitted && finalAnswersSnapshot) ? finalAnswersSnapshot : userAnswers;
-            const scores = calculateFinalScores(answersForDisplay);
-            const scoreP1 = scores.part1Score;
-            const scoreP2 = scores.part2Score;
-            const scoreP3 = scores.part3Score;
-            const totalScore = scores.totalScore;
-            let correctP1 = 0;
-            let correctP2 = 0;
-            let correctP3 = 0;
 
-            EXAM_DATA.forEach(q => {
-                const userAns = answersForDisplay[q.id];
-                const navBtn = document.getElementById(`nav-item-${q.id}`);
-
-                if (q.part === 1) {
-                    if (userAns !== undefined && Number(userAns) === q.correctAnswer) {
-                        correctP1++;
-                        if (navBtn) navBtn.classList.add("correct");
-                    } else {
-                        if (navBtn) navBtn.classList.add("incorrect");
-                    }
-                } 
-                else if (q.part === 2) {
-                    let correctCount = 0;
-                    let answeredSubCount = 0;
-                    if (userAns) {
-                        for (let i = 0; i < 4; i++) {
-                            if (userAns[i] !== undefined) {
-                                answeredSubCount++;
-                                if (userAns[i] === q.correctAnswer[i]) {
-                                    correctCount++;
-                                }
-                            }
-                        }
-                    }
-
-                    if (answeredSubCount === 4 && correctCount === 4) {
-                        correctP2++;
-                        if (navBtn) navBtn.classList.add("correct");
-                    } else if (correctCount > 0) {
-                        if (navBtn) navBtn.classList.add("part-correct");
-                    } else {
-                        if (navBtn) navBtn.classList.add("incorrect");
-                    }
-                } 
-                else if (q.part === 3) {
-                    if (isAnswerAccepted(userAns, q.acceptedAnswers)) {
-                        correctP3++;
-                        if (navBtn) navBtn.classList.add("correct");
-                    } else {
-                        if (navBtn) navBtn.classList.add("incorrect");
-                    }
-                }
-            });
-            const timeSpentSeconds = (EXAM_DURATION_MINUTES * 60) - timeRemaining;
-            const spentMin = Math.floor(timeSpentSeconds / 60);
-            const spentSec = timeSpentSeconds % 60;
-
-            // ---- 2. Thống kê số ý Phần II ----
-            let totalPart2Statements = 0;
-            part2Questions.forEach(q => {
-                if (q.options) totalPart2Statements += q.options.length;
-            });
-
-            let correctPart2Statements = 0;
-            part2Questions.forEach(q => {
-                const userAns = userAnswers[q.id];
-                if (userAns) {
-                    q.correctAnswer.forEach((expected, idx) => {
-                        if (userAns[idx] === expected) correctPart2Statements++;
-                    });
-                }
-            });
-
-            // ---- 3. Ghi dữ liệu ra màn hình kết quả (Section 6) ----
-            const finalScoreEl = document.getElementById("final-total-score");
-            if (finalScoreEl) finalScoreEl.innerText = totalScore.toFixed(2);
-
-            const p1CorrEl = document.getElementById("res-p1-correct");
-            if (p1CorrEl) p1CorrEl.innerText = `${correctP1} / ${part1Questions.length}`;
-
-            const p1ScoreEl = document.getElementById("res-p1-score");
-            if (p1ScoreEl) p1ScoreEl.innerHTML = `<span class="res-score-highlight">${scoreP1.toFixed(2)}</span>`;
-
-            const p2CorrEl = document.getElementById("res-p2-correct");
-            if (p2CorrEl) p2CorrEl.innerText = `${correctP2}/${part2Questions.length} (${correctPart2Statements}/${totalPart2Statements})`;
-
-            const p2ScoreEl = document.getElementById("res-p2-score");
-            if (p2ScoreEl) p2ScoreEl.innerHTML = `<span class="res-score-highlight">${scoreP2.toFixed(2)}</span>`;
-
-            const p3CorrEl = document.getElementById("res-p3-correct");
-            if (p3CorrEl) p3CorrEl.innerText = `${correctP3} / ${part3Questions.length}`;
-
-            const p3ScoreEl = document.getElementById("res-p3-score");
-            if (p3ScoreEl) p3ScoreEl.innerHTML = `<span class="res-score-highlight">${scoreP3.toFixed(2)}</span>`;
-
-            const timeTakenEl = document.getElementById("res-time-taken");
-            if (timeTakenEl) timeTakenEl.innerText = `${spentMin} phút ${spentSec} giây`;
-
+            // Màn hình hoàn tất trung tính: KHÔNG tính điểm, KHÔNG tô màu đúng/sai, KHÔNG hiển thị kết quả.
+            // (Điểm vẫn được calculateFinalScores() tính và gửi về Apps Script trong buildSyncPayload().)
             const candidateInfoEl = document.querySelector("#section-4 .ticket-grid");
             if (candidateInfoEl) {
                 const summaryCandInfo = document.getElementById("summary-candidate-info");
                 if (summaryCandInfo) summaryCandInfo.innerHTML = candidateInfoEl.outerHTML;
             }
 
-            const legendEl = document.getElementById("dashboard-legend");
-            if (legendEl) {
-                legendEl.innerHTML = `
-                    <div class="legend-item"><div class="legend-color" style="background: var(--accent-green);"></div><span>Đúng</span></div>
-                    <div class="legend-item"><div class="legend-color" style="background: var(--accent-orange);"></div><span>Đúng 1 phần</span></div>
-                    <div class="legend-item"><div class="legend-color" style="background: var(--accent-red);"></div><span>Sai</span></div>
-                `;
-            }   
-
-            // ---- 4. Render lại bảng trạng thái, xóa lưu trữ tạm và chuyển sang SECTION 6 ----
-            renderResultStatusDashboard();
             localStorage.removeItem(STORAGE_KEY);
             goToSection(6);
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -5333,30 +5116,7 @@ Trên đĩa cân bên trái, người ta đặt một cốc thủy tinh (hệ h�
                 window.MathJax.typesetPromise();
             }
 
-        function openReviewMode() {
-            document.body.classList.add("review-mode");
-            // Áp dụng lại thiết lập cỡ chữ và phông chữ cho chế độ xem lại
-            applySavedDisplaySettings();
-            if (timerInterval) clearInterval(timerInterval);
-            goToSection(5);
-            
-            const reviewNavBar = document.getElementById("review-nav-bar");
-            if (reviewNavBar) reviewNavBar.classList.remove("hidden");
-
-            const reviewCandInfo = document.getElementById("review-candidate-info");
-            if (reviewCandInfo) reviewCandInfo.classList.remove("hidden");
-
-            const reviewStatusDash = document.getElementById("review-status-dashboard");
-            if (reviewStatusDash) reviewStatusDash.classList.remove("hidden");
-
-            renderReviewCandidateInfo();
-            renderReviewStatusDashboard();
-            renderReviewQuestions();
-
-            if (window.MathJax && window.MathJax.typesetPromise) {
-                window.MathJax.typesetPromise();
-            }
-        }
+        
 
         function renderReviewCandidateInfo() {
             document.getElementById("review-fullname").innerText = candidateInfo.fullname || "--";
@@ -5440,12 +5200,7 @@ Trên đĩa cân bên trái, người ta đặt một cốc thủy tinh (hệ h�
             });
         }
 
-        function backToResult() {
-            document.body.classList.remove("review-mode");
-            const reviewNavBar = document.getElementById("review-nav-bar");
-            if (reviewNavBar) reviewNavBar.classList.add("hidden");
-            goToSection(6);
-        }
+
 
         /* --------------------------------------------------------------------------
            L. XỬ LÝ PHÍM TẮT ĐIỀU HƯỚNG VÀ THAO TÁC (KEYBOARD SHORTCUTS)
